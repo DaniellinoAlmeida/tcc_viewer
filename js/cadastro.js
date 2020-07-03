@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$('.dropdown-trigger').dropdown();
+});
+
+$(document).ready(function(){
+	$('select').formSelect();
+})
+$(document).ready(function(){
+	$("#aluno").click(function(){
+		$(".dados").html('<div class="row">	<div class="col s7">                                    <!-- modelo input nome -->                                    <form>                                        <div class="input-field">                                            <input id="nome" type="text" class="validate">                                            <label for="nome" class="black-text">Nome</label>                                        </div>                                    </form>                                </div>                                <div class="col s5">                                    <form>                                        <div class="input-field">                                            <input id="rm" type="number" class="validate">                                            <label for="rm" class="black-text">RM</label>                                        </div>                                    </form>                                 </div>                            </div>                            <div class="row">                                <div class="dados">                                    <div class="col s7">                                        <!-- modelo input nome -->                                        <form>                                            <div class="input-field">                                                <input id="nome" type="text" class="validate">                                                <label for="nome" class="black-text">Nome</label>                                            </div>                                        </form>                                    </div>                                    <div class="col s5">                                        <form>                                            <div class="input-field">                                                <select>                                                    <option value="" disabled selected></option>                                                    <option value="1">Option 1</option>                                                    <option value="2">Option 2</option>                                                    <option value="3">Option 3</option>                                                </select>                                                <label class="black-text">Semestre e Ano</label>                                            </div>                                        </form>                                     </div>                                </div>                            </div>');
+		$(".campo_cadastrar_aviso").empty();
+	});
+});
+

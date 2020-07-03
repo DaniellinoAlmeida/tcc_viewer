@@ -1,0 +1,9 @@
+/* cor da label */
+.input-field label {
+    color: white;
+}
+/* cor do icone quando seleciona a input */
+.input-field .prefix.active {
+    color: white;
+    text-shadow: none;
+}

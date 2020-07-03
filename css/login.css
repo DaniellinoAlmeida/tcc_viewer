@@ -1,0 +1,93 @@
+body{
+  overflow: hidden;
+  text-align: center;
+}
+#imgFundo{
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 87%;
+    height: 100%;
+    margin-left: -700px;
+    z-index: -1;
+}
+
+.card-panel {
+  height: 910px;
+  margin-top: -70px;
+  margin-left: 100px;
+  margin-right: -20px;
+}
+
+.img_Logo_TCC{
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.Titulo_TCC_Login{
+  color: white;
+  margin-top: 460px;
+}
+
+.Subtitulo_TCC_Login{
+  color: white;
+}
+
+#nomelogin{
+  color: red;
+  font-size: 25px;
+  margin-top: -50px;;
+}
+
+.Nivel_Acesso_Login{
+  font-size: 20px;
+  color: black;
+}
+
+::placeholder{
+  color: grey;
+}
+
+.esqueceu_senha{
+  font-size: 13px;
+  margin-left: 165px;
+}
+
+.Botao_Entrar{
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgb(169,0,0);
+}
+.Botao_Entrar:hover{
+  color: rgb(169,0,0);
+  background-color: white;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(169,0,0);
+  transition: 0.3s;
+}
+.Texto_Login{
+  font-size: 17px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.input-field input[type=password]:focus + label {
+  color: red !important;
+}
+.input-field input[type=text]:focus + label {
+  color: red !important;
+}
+.row .input-field input:focus {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important;
+}
+
+.select option{
+  color: black;
+}
+
+@font-face{
+  font-family: titulo;
+  src: url(".../css/Deep Shadow.ttf");
+}

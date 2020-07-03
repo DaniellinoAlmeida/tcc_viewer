@@ -1,0 +1,223 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(235,235,235);
+}
+.nav{
+    display: flex;
+    height: 80px;
+    background-color: #C90000;
+    justify-content: space-between;
+    color: white;
+    font-family: sans-serif;
+    font-size: 12pt;
+    z-index: -10;
+}
+.nav > .conteudo{
+    display: grid;
+    grid-template-columns: .1fr .5fr 1fr;
+    grid-template-rows: 80px;
+    grid-template-areas: "linha foto coluna";
+    transition: .3s;
+    cursor: pointer;
+}
+.botao_login{
+    transition: 0.3s;
+    border-radius: 30px;
+}
+.foto{
+    min-width: 80px;
+    border-radius: 100%;
+    height: 95%;
+    background-image: url('../img/perfil.png');
+    background-size: cover;
+    background-color: white;
+    margin: auto;
+}
+.linha{
+    width: 1px;
+    height: auto;
+    grid-area: linha;
+    background-color: white;
+    margin: 0px 1px 0px 10px;
+}
+.coluna{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    grid-area: coluna;
+}
+.pesquisa{
+    margin-left: -100px;
+    width: 30%;
+    margin: auto; 
+}
+section{
+    width: 10%;
+}
+.imgmenu{
+    margin: 5px 10px auto 0px;
+    height: 80%;
+}
+.imgmenu:hover{
+    cursor: pointer;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.nav > .texto{
+    display: flex;
+    flex-direction: column;
+}
+/* cor da label */
+.input-field label {
+    color: white;
+}
+/* cor do icone quando seleciona a input */
+.input-field .prefix.active {
+    color: white;
+    text-shadow: none;
+}
+.fundoPerfil{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    z-index: -1;
+}
+.menuperfil{
+    position: relative;
+    left: 32px;
+    width: 150px;
+    height: 150px;
+    border: solid 2px white;
+    border-radius: 100%;
+}
+.notifica{
+    position: absolute;
+    width: 15%;
+    height: auto;
+    margin: -8% 1% 0% 0%;
+    right: 0;
+    cursor: pointer;
+}
+.nomealuno{
+    width: 100%;
+    padding: 0;
+}
+
+/*Icone do sino*/
+.notifica:hover{
+    cursor: pointer;
+    animation: ring 1.5s;
+}
+/*Ação do sino*/
+@keyframes ring{
+    0% { transform: rotate(0deg) }
+    5% { transform: rotate(45deg) }
+    15% { transform: rotate(-40deg) }
+    25% { transform: rotate(20deg) }
+    35% { transform: rotate(-15deg) }
+    45% { transform: rotate(10deg) }
+    55% { transform: rotate(-5deg) }
+    60% { transform: rotate(0deg) }
+    100% { transform: rotate(0deg) }
+}
+.menu{
+    position: absolute;
+    width: 14.5%;
+    margin-left: .5%; 
+    height: auto;
+    padding: auto;
+}
+.content{
+    padding: 10%;
+}
+label{
+    color: black;
+}
+footer{
+    height: 80px;
+    background-color: #C90000;
+    color: white;
+}
+#btnBaixar{
+    border-radius: 40px;
+    background-color: #C90000;
+}
+/*Icones do menu sidenav*/
+.icone{
+    width: 100%;
+    height: auto;
+}
+/*container das logos*/
+.card_imagem_logo{
+    width: 100%;
+    height: 100%;
+}
+
+/*imagem nos cards de tcc*/
+.img_logo_tcc{
+    margin-top: -50px;
+    width: 130%;
+    height: 130%;
+}
+.conteudo_tcc{
+    width: 100%;
+    height: 110px; 
+    overflow: hidden;
+}
+/*botão de login*/
+.btn_login{
+    background-color: rgb(169,0,0);
+    margin-right: -80px;
+    margin-top: 10px;
+    width: 150px;
+}
+.btn_login:hover{
+    background-color: white;
+    color: rgb(169,0,0);
+}
+
+.local_atual{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 150px;
+}
+.letra_login{
+    font-size: 16px;
+}
+
+  .input-field input[type=text]:focus + label {
+    color: red !important;
+  }
+  
+  .nav .row .input-field input:focus {
+    border-bottom: 1px solid red !important;
+    box-shadow: 0 1px 0 0 red !important;
+  }
+
+.btn_fechar_modal{
+    background-color: rgb(201,0,0);
+    color: white;
+}
+.btn_fechar_modal:hover{
+    border: solid 1px rgb(201,0,0);
+    color: rgb(201,0,0);
+    background-color: white;
+}
+
+.btn_baixar_TCC{
+    background-color: rgb(201,0,0);
+    color: white;
+
+}
+.btn_baixar_TCC:hover{
+    border: solid 1px rgb(201,0,0);
+    color: rgb(201,0,0);
+    background-color: white;
+}
+
+.textarea_fixa{
+    position: absolute;
+}

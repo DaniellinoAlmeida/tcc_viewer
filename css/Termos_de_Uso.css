@@ -1,0 +1,18 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(235,235,235);
+}
+.card{
+    width: 900px;
+}
+
+.titulo{
+    margin-top: -10px;
+}
+
+.seta_volta{
+    font-size: 35px;
+    color: rgb(201, 0, 0);
+}
